@@ -13,7 +13,10 @@ public class Ruin {
 	int winLimit = 10;
 	int games = 1;
 	double winChance1 =0.6;
+	int winSimu=0;
+	int loseSimu=0;
 	
+
 	for (int totalSimulations = 1; totalSimulations<=500; totalSimulations++)
 	{
 		
@@ -52,14 +55,17 @@ public class Ruin {
 			if (startAmount == 0)
 			{
 				System.out.println("Simulation "+totalSimulations+": "+games+"Games YOU LOSE!");
+				loseSimu++;
 			}else 
 			{
 				System.out.println("Simulation "+totalSimulations+": "+games+" Games YOU WIN!");
+				winSimu++;
 			}
 			
 	
 	
 	}
+//	System.out.println(w);
 
 	}
 
